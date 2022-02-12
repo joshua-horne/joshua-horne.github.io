@@ -25,24 +25,37 @@ a:hover {
     height: auto;
 }
 .page-body{
+    outline: auto;
+    outline-color: pink;
     padding: 0.5em;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 .prev-box {
+    outline: auto;
+    outline-color: red;
+    background-color: dimgray;
+    border-radius: 5px;
     display: flex;
-    max-height: 10em;
-}
+    flex-flow: row wrap;
+    margin: 1em;
+    justify-content: center;
+    }
 .prev-article {
+    outline: auto;
+    outline-color: green;
+    margin: 0.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    flex-grow: 1;
-    max-height: 10em;
 }
 .prev-pic {
-    margin: auto;
+    outline: auto;
+    outline-color: blue;
+    margin: 0.5em;
+    display: flex;
     max-height: 10em;
 }
 .main-article {
