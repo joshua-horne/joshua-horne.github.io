@@ -1,9 +1,23 @@
 header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     background-color: dimgray;
-    font-family: 'Nunito';
-    color:ivory;
-    padding: 1em;
     margin: -0.5em;
+}
+.header-text {
+    margin-left: 1em;
+    padding: 0.5em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-end;
+}
+.eda-logo {
+    margin-right: 1em;
+    display: inline-flex;
+    align-self: center;
+    max-width: 100%;
+    height: auto;
 }
 body {
     background-color: lightslategray;
@@ -13,47 +27,66 @@ body {
 a:link {
     color: ivory;
     text-decoration: none;
-  }
+}
 a:hover {
     text-decoration: underline;
-  }
+}
+a:after {
+    color: ivory;
+}
+.page-body {
+    margin-top: 0.5em;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-evenly;
+}
 .profile-pic {
-    padding-top: 0.5em;
+    outline: auto;
+    margin: 1em;
     border-radius: 50%;
     float:right ;
-    max-width: 100%;
+    width: min-content;
     height: auto;
 }
-.page-body{
-    outline: auto;
-    outline-color: pink;
-    padding: 0.5em;
+.about-body {
+    max-width: 40%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.prev-body {
+    max-width: 40%;
+    height: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
 }
+.about-article {
+    max-width: 80%;
+    height: auto;
+    padding: 0.5em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
 .prev-box {
-    outline: auto;
-    outline-color: red;
     background-color: dimgray;
     border-radius: 5px;
     display: flex;
-    flex-flow: row wrap;
+    flex: row;
     margin: 1em;
     justify-content: center;
     }
 .prev-article {
-    outline: auto;
-    outline-color: green;
     margin: 0.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
+    text-align: center;
 }
 .prev-pic {
-    outline: auto;
-    outline-color: blue;
     margin: 0.5em;
     display: flex;
     max-height: 10em;
@@ -67,4 +100,10 @@ a:hover {
     padding-top: 0.5em;
     max-width: 100%;
     height: auto;
+}
+.main-article-example {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
