@@ -41,7 +41,6 @@ a:after {
     justify-content: space-evenly;
 }
 .profile-pic {
-    outline: auto;
     margin: 1em;
     border-radius: 50%;
     float:right ;
@@ -56,11 +55,10 @@ a:after {
     align-items: center;
 }
 .prev-body {
-    max-width: 40%;
+    max-width: 60%;
     height: auto;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
 }
 .about-article {
     max-width: 80%;
@@ -78,6 +76,7 @@ a:after {
     flex: row;
     margin: 1em;
     justify-content: center;
+    align-content: flex-start;
     }
 .prev-article {
     margin: 0.5em;
@@ -89,7 +88,8 @@ a:after {
 .prev-pic {
     margin: 0.5em;
     display: flex;
-    max-height: 10em;
+    max-width: 40%;
+    height: auto;
 }
 .main-article {
     margin: 1em;
@@ -106,4 +106,8 @@ a:after {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+}
+ul {
+    list-style: circle;
+    color: cyan;
 }
