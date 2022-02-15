@@ -55,10 +55,12 @@ a:after {
     align-items: center;
 }
 .prev-body {
-    max-width: 60%;
+    max-width: 80%;
     height: auto;
     display: flex;
     flex-flow: column nowrap;
+    justify-self: center;
+    align-self: center;
 }
 .about-article {
     max-width: 80%;
