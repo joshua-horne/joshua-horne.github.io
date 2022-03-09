@@ -10,34 +10,73 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
         <title>Javascript - DOM</title>
     </head>
-
-    <header>
-        <div class="header-text">
-          <h1>Joshua Horne</h1>
-          <h2>Enspiral Dev Academy Student</h2>
+    <body>
+        <header>
+            <div class="header-box">
+              <div class="header-text">
+                <h1>Joshua Horne</h1>
+                <h2>Enspiral Dev Academy Student</h2>
+              </div>
+              <img src="../images/EDA.png" alt="EDA Logo" class="eda-logo">
+            </div>
+            <div class="nav-bar">
+              <ul>
+                <li>
+                  <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#Core" class="nav-button">Core</a>
+                  <div class="dropdown-content">
+                    <a href="../blog/identity-and-values.html" class="nav-link">Identity and Values</a>
+                    <a href="../blog/learning-plan.html" class="nav-link">Learning Plan</a>
+                    <a href="../blog/neuroplasticity.html" class="nav-link">Neorplasticity</a>
+                    <a href="../blog/emotional-intelligence.html" class="nav-link">Emotional Intelligence</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="#Tech" class="nav-button">Tech</a>
+                  <div class="dropdown-content">
+                    <a href="../blog/html-css.html" class="nav-link">Margin, Border and Padding</a>
+                    <a href="../blog/javascript-dom.html" class="nav-link">Javascript DOM</a>
+                    <a href="../blog/problem-solving.html" class="nav-link">Problem Solving</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="#Games" class="nav-button">Games</a>
+                  <div class="dropdown-content">
+                    <a href="../minesweeper/index.html" class="nav-link">Minesweeper</a>
+                    <a href="../javascript-carnival/inflate-the-unicorn/inflate-the-unicorn.html" class="nav-link">Inflate the Unicorn</a>
+                    <a href="../javascript-carnival/whack-a-mole/whack-a-mole.html" class="nav-link">Whack a Mole</a>
+                    <a href="../javascript-carnival/dress-the-clown/dress-the-clown.html" class="nav-link">Dress the Clown</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </header>
+        <div class="page-body">
+            <div class="main-article">
+                <img src="../images/DOM.jpg" alt="Picture of DOM" class="main-pic">
+                <h2>The Document Object Model</h2>
+                <p>This week we looked at JavaScript and the DOM (Document Object Model)</p>
+                <p>The DOM is what JavaScript uses to interact with your website. In this model the structure of your web page should be viewed like a tree, with it beginning with a base that is then branched out into a number of different elements</p>
+                <p>In this example the base of your tree is the "Document", which refers to the entire page and all its content. It will then branch into sections like the header and body, and those sections will further branch out into parts like titles, headings etc.</p>
+                <p>With this strcucture in mind JavaScript is able to call on and interact with specific parts of your page.</p>
+                <p>So how can wee use JavaScript and the DOM? Let's work with something simple like a button. And we want this button to display a message when clicked. The button itself can be made through HTML and CSS, it's just an element of the page like any other. The interactivity is where JavaScript steps in.</p>
+                <p>First we need to call on the object for JavaScript to interact with, normally this is done by assigning the object in question a unique ID in the HTML and then calling that specific ID with JavaScript.</p>
+                <p>Once JavaScript knows what it's interacting with we can create a function to run when a specific event happens. In this example the function will be to display a message, and the event will be when the button is clicked.</p>
+                <p>To recap on this example; JavaScript calls the object (the button), creates and assigns a function (display message) and waits for an event (when clicked). When the event occurs, the function is run.</p>
+                <p>Now let's look at something a little more complex. Continuing with our button let's have it change the background colour of the page with each click, with a set order of colours being cycled through.</p>
+                <p>The object and event remain the same but we want to change the function. Rather than display a message we want to change background color. And because we want more than just one colour we will be using an array. An array is like a list or set.</p>
+                <p>Let's have the button cycle through the 7 colours of the rainbow, then our array will consist of 7 items (Red, Orange, Yellow etc.) The act of 'cycling' through these items can be achieved with a loop.</p>
+                <p>On each cycle or loop the of function (change background color) we will use a different item from the array e.g on 1st click we will change background to the 1st item of the array (red), 2nd click will change to 2nd item (orange)</p>
+                <p>See how our loop keeps track of how many times the function has been run and adjust the function accordingly.</p>
+                <p>Using these examples as a very simple base you can see how JavaScript and it's DOM bring interactivity to your website.</p>
+            </div>
         </div>
-        <img src="../images/EDA.png" alt="EDA Logo" class="eda-logo">
-    </header>
-
-    <body>    
-        <div class="main-article">
-            <img src="../images/DOM.jpg" alt="Picture of DOM" class="main-pic">
-            <h2>The Document Object Model</h2>
-            <p>This week we looked at JavaScript and the DOM (Document Object Model)</p>
-            <p>The DOM is what JavaScript uses to interact with your website. In this model the structure of your web page should be viewed like a tree, with it beginning with a base that is then branched out into a number of different elements</p>
-            <p>In this example the base of your tree is the "Document", which refers to the entire page and all its content. It will then branch into sections like the header and body, and those sections will further branch out into parts like titles, headings etc.</p>
-            <p>With this strcucture in mind JavaScript is able to call on and interact with specific parts of your page.</p>
-            <p>So how can wee use JavaScript and the DOM? Let's work with something simple like a button. And we want this button to display a message when clicked. The button itself can be made through HTML and CSS, it's just an element of the page like any other. The interactivity is where JavaScript steps in.</p>
-            <p>First we need to call on the object for JavaScript to interact with, normally this is done by assigning the object in question a unique ID in the HTML and then calling that specific ID with JavaScript.</p>
-            <p>Once JavaScript knows what it's interacting with we can create a function to run when a specific event happens. In this example the function will be to display a message, and the event will be when the button is clicked.</p>
-            <p>To recap on this example; JavaScript calls the object (the button), creates and assigns a function (display message) and waits for an event (when clicked). When the event occurs, the function is run.</p>
-            <p>Now let's look at something a little more complex. Continuing with our button let's have it change the background colour of the page with each click, with a set order of colours being cycled through.</p>
-            <p>The object and event remain the same but we want to change the function. Rather than display a message we want to change background color. And because we want more than just one colour we will be using an array. An array is like a list or set.</p>
-            <p>Let's have the button cycle through the 7 colours of the rainbow, then our array will consist of 7 items (Red, Orange, Yellow etc.) The act of 'cycling' through these items can be achieved with a loop.</p>
-            <p>On each cycle or loop the of function (change background color) we will use a different item from the array e.g on 1st click we will change background to the 1st item of the array (red), 2nd click will change to 2nd item (orange)</p>
-            <p>See how our loop keeps track of how many times the function has been run and adjust the function accordingly.</p>
-            <p>Using these examples as a very simple base you can see how JavaScript and it's DOM bring interactivity to your website.</p>
-        </div>
+        <footer>
+            <div class="footer-box">
+              <a href="https://github.com/joshua-horne"><img src="../images/GitHub-Mark-64px.png" class="footer-logo"></a>
+            </div>
+        </footer>    
     </body>
-
 </html>

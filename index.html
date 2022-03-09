@@ -8,92 +8,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <title>Joshua Horne - My Blog</title>
+    <title>Joshua Horne - My Blog(New)</title>
   </head>
-
-  <header>
-      <div class="header-text">
-        <h1>Joshua Horne</h1>
-        <h2>Enspiral Dev Academy Student</h2>
-      </div>
-      <img src="images/EDA.png" alt="EDA Logo" class="eda-logo">
-  </header>
-
   <body>
+    <header>
+      <div class="header-box">
+        <div class="header-text">
+          <h1>Joshua Horne</h1>
+          <h2>Enspiral Dev Academy Student</h2>
+        </div>
+        <img src="images/EDA.png" alt="EDA Logo" class="eda-logo">
+      </div>
+      <div class="nav-bar">
+        <ul>
+          <li>
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="dropdown">
+            <a href="#Core" class="nav-button">Core</a>
+            <div class="dropdown-content">
+              <a href="blog/identity-and-values.html" class="nav-link">Identity and Values</a>
+              <a href="blog/learning-plan.html" class="nav-link">Learning Plan</a>
+              <a href="blog/neuroplasticity.html" class="nav-link">Neorplasticity</a>
+              <a href="blog/emotional-intelligence.html" class="nav-link">Emotional Intelligence</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#Tech" class="nav-button">Tech</a>
+            <div class="dropdown-content">
+              <a href="blog/html-css.html" class="nav-link">Margin, Border and Padding</a>
+              <a href="blog/javascript-dom.html" class="nav-link">Javascript DOM</a>
+              <a href="blog/problem-solving.html" class="nav-link">Problem Solving</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#Games" class="nav-button">Games</a>
+            <div class="dropdown-content">
+              <a href="games/minesweeper/index.html" class="nav-link">Minesweeper</a>
+              <a href="games/whack-a-mole/whack-a-mole.html" class="nav-link">Whack a Mole</a>
+              <a href="games/dress-the-clown/dress-the-clown.html" class="nav-link">Dress the Clown</a>
+              <a href="games/inflate-the-unicorn/inflate-the-unicorn.html" class="nav-link">Inflate the Unicorn</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
     <div class="page-body">
-      <div class="prev-body">
-
-        <div class="prev-box">
-          <img src="images/HangedMan.PNG" alt="Thumbnail of the Hanged Man Tarot" class="prev-pic">
-          <div class="prev-article">
-            <a href="blog/identity-and-values.html">
-              <h2>Identity Values and Strengths</h2>
-            </a>
-            <p>Who am I? What does it all mean?</p>
-          </div>
-        </div>
-
-        <div class="prev-box">
-          <img src="images/Box-Metal-Gear.png" alt="Thumnbail of the Box" class="prev-pic">
-          <div class="prev-article">
-            <a href="blog/html-css.html">
-              <h2>Margin Border and Padding</h2>
-            </a>
-            <p>Explore the exciting world of boxes</p>
-          </div>
-        </div>
-
-        <div class="prev-box">
-          <img src="images/napoleon.jpg" alt="Thumnbail of the Napoleon" class="prev-pic">
-          <div class="prev-article">
-            <a href="blog/learning-plan.html">
-              <h2>My Learning Plan</h2>
-            </a>
-            <p>The road to victory!!</p>
-          </div>
-        </div>
-
-        <div class="prev-box">
-          <img src="images/empathy-bot.png" alt="Thumnbail of the Empathy Bot" class="prev-pic">
-          <div class="prev-article">
-            <a href="blog/emotional-intelligence.html">
-              <h2>Emotional Intelligence</h2>
-            </a>
-            <p>The Tin Man's wish</p>
-          </div>
-        </div>
-
-        <div class="prev-box">
-          <img src="images/DOM-preview.png" alt="Thumnbail of the DOM" class="prev-pic">
-          <div class="prev-article">
-            <a href="blog/javascript-dom.html">
-              <h2>JavaScript and The DOM</h2>
-            </a>
-            <p>What wizadry is this?</p>
-          </div>
-        </div>
-
-        <div class="prev-box">
-          <img src="images/neuro-prev.jpg" alt="Thumnbail of brain squish" class="prev-pic">
-          <div class="prev-article">
-            <a href="blog/neuroplasticity.html">
-              <h2>Neuroplasticity</h2>
-            </a>
-            <p>Brains are squishy</p>
-          </div>
-        </div>
-
-        <div class="prev-box">
-          <img src="images/clippy.png" alt="Thumnbail of clippy" class="prev-pic">
-          <div class="prev-article">
-            <a href="blog/problem-solving.html">
-              <h2>Problem Solving</h2>
-            </a>
-            <p>I kinda miss Clippy</p>
-          </div>
-        </div>
-
+      <div class="main-article">
+        <img src="./images/Joshua.png" alt="Picture of me" class="main-pic">
+        <h4>Hi, I'm Josh. Welcome to my blog site.</h4>
+        <p>Follow me as I work through my Enspiral Dev Academy exercises</p>
+        <p>I'll have blog entries on core subjects such as Emotional Intelligence as well as technical subjects like the Javascript DOM.</p>
+        <p>I've also made some games if you get bored. Enjoy :)</p>
       </div>
     </div>
+
+    <footer>
+      <div class="footer-box">
+        <a href="https://github.com/joshua-horne"><img src="./images/GitHub-Mark-64px.png" class="footer-logo"></a>
+      </div>
+    </footer>
+
   </body>
+
 </html>

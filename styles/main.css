@@ -1,28 +1,101 @@
-header {
+body{
+    background-color: rgb(204, 204, 204);
+    font-family: 'Nunito';
+    color: ivory;
+}
+.header-box{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    background-color: dimgray;
+    background-color: darkslategray;
     margin: -0.5em;
 }
-.header-text {
+.header-text{
     margin-left: 1em;
     padding: 0.5em;
     display: flex;
     flex-flow: column nowrap;
     align-content: flex-end;
 }
-.eda-logo {
+.eda-logo{
     margin-right: 1em;
     display: inline-flex;
     align-self: center;
     max-width: 100%;
     height: auto;
 }
-body {
-    background-color: lightslategray;
-    font-family: 'Nunito';
-    color: ivory;
+.nav-bar{
+    background-color: darkslategray;
+    margin: -1em
+}
+.nav-bar ul{
+    list-style-type: none;
+    margin-left: 1.5em;
+    padding: 0;
+    overflow: hidden;
+}
+.nav-bar li{
+    float: left;
+}
+.nav-bar li.dropdown{
+    display: inline-block;
+}
+.nav-bar li.dropdown .dropdown-content{
+    display: none;
+    position: absolute;
+}
+.nav-bar li.dropdown:hover .dropdown-content{
+    display: block;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.nav-bar a.nav-button{
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+}
+.nav-bar a.nav-link{
+    display: block;
+    padding: 0.5em;
+}
+.nav-bar a:hover, .dropdown:hover {
+    font-weight: bold;
+    background-color: rgb(233, 77, 62);
+}
+.page-body {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+.main-article{
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    padding: 1em;
+    display: block;
+    max-width: 80%;
+    justify-content: center;
+    text-align: center;
+    background-color: slategray;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.main-pic {
+    padding-top: 0.5em;
+    max-width: 100%;
+    height: auto;
+}
+.footer-box {
+    display: block;
+    background-color: darkslategray;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.footer-logo {
+    display: block;
+    margin: auto;
 }
 a:link {
     color: ivory;
@@ -33,78 +106,9 @@ a:hover {
     text-decoration: underline;
     font-weight: bold;
 }
-a:after {
+a:visited {
     color: ivory;
     font-weight: bold;
-}
-.page-body {
-    margin-top: 0.5em;
-    display: flex;
-    flex-flow: row-reverse;
-    justify-content: space-evenly;
-}
-.profile-pic {
-    margin: 1em;
-    border-radius: 50%;
-    float:right ;
-    width: min-content;
-    height: auto;
-}
-.about-body {
-    max-width: 40%;
-    height: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-.prev-body {
-    max-width: 80%;
-    height: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-self: center;
-    align-self: center;
-}
-.about-article {
-    max-width: 80%;
-    height: auto;
-    padding: 0.5em;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    text-align: center;
-}
-.prev-box {
-    background-color: dimgray;
-    border-radius: 5px;
-    display: flex;
-    flex: row;
-    margin: 1em;
-    justify-content: center;
-    align-content: flex-start;
-    }
-.prev-article {
-    margin: 0.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.prev-pic {
-    margin: 0.5em;
-    display: flex;
-    max-width: 40%;
-    height: auto;
-}
-.main-article {
-    margin: 1em;
-    display: block;
-    text-align: center;
-}
-.main-pic {
-    padding-top: 0.5em;
-    max-width: 100%;
-    height: auto;
 }
 .main-article-example {
     display: flex;
