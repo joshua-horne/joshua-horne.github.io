@@ -65,7 +65,8 @@ body{
 .page-body {
     margin-top: 0.5em;
     display: flex;
-    justify-content: center;
+    flex-flow: column;
+    align-items: center;
 }
 .main-article{
     margin-left: -0.5em;
